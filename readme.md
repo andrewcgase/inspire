@@ -23,7 +23,7 @@ Below you will see an image that you may use for inspiration.
 It is your responsibility to render each piece of the data from the services out to the screen. Look carefully at each controller to figure out the properties that will need to be used for visualization.
 
 Requirements:
-- `5 points`: The data from the services are each rendered. Quote, Image, Weather, Todo 
+- `5 points`: The data from the services are each rendered. Quote, Image, Weather, Todo x
 
 ###Step 2 - Adding the functionality `Total Points: 10`
 
@@ -34,15 +34,15 @@ Requirements:
 - `2.5 points`: The todolist allows items to be removed from the list
 - `2.5 points`: The todolist takes advantage of the TodoService to provide persistant data through localStorage 
 - `1.25 points`: The todolist shows the total count of task currently being tracked
-- `1.25 points`: Clicking the weather should let the user toggle between Celsius and Fahrenheit display
+- `1.25 points`: Clicking the weather should let the user toggle between Celsius and Fahrenheit display x
 
 ###Step 3 - Prettify `Total Points: 5`
 
 The positioning of elements on the page is not the absolute most crucial thing for this application however it does need to have few things to make the grade. Use the picture above as an idea for laying out your site.
 
 Requirements:
-- `2.5 points`: On hover the quote should show the author of the quote
-- `2.5 points`: The image should be on large display with at least one other element positioned over the top of the image.  
+- `2.5 points`: On hover the quote should show the author of the quote x~
+- `2.5 points`: The image should be on large display with at least one other element positioned over the top of the image.  x~ 
 
 ###BONUS - Watching Time Tick `Total Points: 5`
 Requirements: 

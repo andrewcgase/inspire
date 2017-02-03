@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    padding:0;
+  
+}
+
+img{
+    width: 100vw;
+    position:fixed;
+    z-index: 0;     
+}
+li{
+    font-family: Courier, monospace;
+    color:  black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+h3{
+    font-family: Courier, monospace;
+    color:  black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+
+
+    
+
+.weather{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: Courier, monospace;
+    color:  black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.quote{
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+    font-family: Courier, monospace;
+    color:  black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+
+.hidden-quote {
+    display: none;
+    position: absolute;
+    right: 20%;
+    bottom: 7%;
+    font-family: Courier, monospace;
+    color:  black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+.trigger:hover + .hidden-quote {
+    display: inline;
+}
+
+.todos{
+    position: absolute;
+    right: 50%;
+    top: 20%;
+
+}

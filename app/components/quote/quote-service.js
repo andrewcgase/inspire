@@ -5,9 +5,15 @@ function QuoteService(){
 	//Do Not Edit above we have to go through the bcw-getter to access this api
 	
 	this.getQuote =  function(callWhenDone){
+		var q = localStorage.getItem('quote');
+		if (q) {
+			q = JSON.parse(q);
+			console.log('Quote data:', q)
+			return callWhenDone(q)
+		}
 		$.get(apiUrl, function(res){
 			console.log('Quote Data:', res)
-			localStorage.setItem('quote', JSON.stringify(res))
+			localStorage.setItem('quote', res)
 			return callWhenDone(res)
 			//Now What?
 		})

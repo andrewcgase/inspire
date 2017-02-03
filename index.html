@@ -6,21 +6,52 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body id="body">
-	<div id="weather">
-		{{weather}}
+<body>
+
+
+
+	<div id="image">
+
+		<img :src="image">
+
+	</div>
+
+
+
+	<div id="weather" @click="toggleUnit()" class='weather'>
+		{{displayWeather.temp}}
 	</div>
 
 	<div id="quote">
-		{{quote}}
+		<div v-html="displayQuote.quote" class="quote trigger">
+
+		</div>
+		<div v-html="displayQuote.author" class="hidden-quote">
+
+		</div>
 	</div>
 
-	<div id="todo">
-		{{todo}}
+	<div id="todo" class="todos">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3>{{count}} things to do</h3>
+			</div>
+			<div class="panel-body">
+				<form @submit.prevent="addTodo(text)">
+					<input type="text" v-model="text">
+					<button type='submit'>Add Todo</button>
+				</form>
+				<ul v-for="(todo, tIndex) in todos">
+					<li> {{todo}} </li>
+					<button @click="removeTodo(tIndex)">DONE!</button>
+
+				</ul>
+			</div>
+		</div>
 	</div>
-	<div id="image">
-		{{image}}
-	</div>
+
+
+
 
 
 

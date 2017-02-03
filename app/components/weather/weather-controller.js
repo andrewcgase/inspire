@@ -1,23 +1,21 @@
-(function (){
-	
+(function () {
+
 	var wc = this;
 	var weatherService = new WeatherService();
-	
-	weatherService.getWeather(function(weather){
-		console.log(weather);
-		//What can you do with this weather object?
 
-		new Vue({
-			el: '#weather',
-			data:{
-				weather: weather
+
+	new Vue({
+		el: '#weather',
+		data: {
+			weather: {}
+		},
+		mounted: function () {
+			weatherService.getWeather(this.setWeather)
+		},
+		methods: {
+			setWeather: function (weather) {
+				this.weather = weather;
 			}
-		})
-
+		}
 	})
-	
-	
-	
-	
-	
-}())
+} ())
